@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Manual Build and Deploy
 
 # Controls when the workflow will run
 on:  
