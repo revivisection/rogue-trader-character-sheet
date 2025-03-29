@@ -39,7 +39,7 @@ export const convictionData: Conviction = {
 
 export const HistoryData: Array<historyEntry> = [
     {
-        entry: `Stuff that your character has done in game.`,
+        entry: `A list of stuff that your character has done in game.`,
     },
     {
         entry: `Or even before the events of the game, for lorebuilding purposes.`,
