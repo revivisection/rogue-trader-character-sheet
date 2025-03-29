@@ -26,7 +26,7 @@ export const RelationsData:Array<Relation> = [
         name:"Seneschal Abelard Weserian",
         accordionOpen: true,
         quote: "Nothing's impossible for this old officer.",
-        body: `<p>Rogue Trader Tisseria's most trusted confidant. As it should be.</p>
+        body: `<p>The Rogue Trader's most trusted confidant. As it should be.</p>
         <p>Write stuff about your companions here. If you don't include the body item from the object, a classified stamp will appear. This sentence doesn't make sense? Just look at the code and you will see.</p>`,
         pic: abelard,
     },
