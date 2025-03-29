@@ -1,0 +1,155 @@
+@import "_normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cairo:wght@200..1000&display=swap');
+
+.cairo-bold {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.cairo-regular {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.alegreya-bold {
+    font-family: "Alegreya", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.alegreya-regular {
+    font-family: "Alegreya", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+:root {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #12110D;
+    // scrollbar-color: #00000069 transparent;
+}
+$accent :#6E9846;
+// $secondary: #cf1659;
+
+// #cf1659
+::-moz-selection {
+    /* Code for Firefox */
+    color: #ffff;
+    background: $accent;
+}
+
+::selection {
+    color: #ffff;
+    background: $accent;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #be131300;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2B4021;
+    // background: #000000;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6E9846;
+}
+
+html {
+    scroll-behavior: smooth;
+    // scrollbar-color: red orange;
+    scrollbar-width: thin;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+body {
+    scrollbar-gutter: stable both-edges;
+}
+
+.grey {
+    color: #9D9D9D;
+}
+
+.green {
+    color: #6E9846;
+}
+
+.darkgreen {
+    color: #334d1c;
+}
+
+.red {
+    color: #814d4d;
+}
+
+blockquote {
+    // border-left: 7px solid #36472a;
+    margin: 0px 0px;
+    padding: 0.5em 0px;
+    font-size: 18px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    line-height: normal;
+}
+
+blockquote:before {
+    color: #6E9846;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 10px;
+    vertical-align: -0.4em;
+}
+blockquote::after {
+    color: #6E9846;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-left: 10px;
+    vertical-align: -0.4em;
+    opacity: 20%;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.mobile {
+    display: none;
+}

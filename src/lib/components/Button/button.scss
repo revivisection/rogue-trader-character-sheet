@@ -1,0 +1,28 @@
+    .button {
+        &__container {
+            border-color: #2B4021;
+            border-width: 5px;
+            border-style: solid;
+            color: #6E9846;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 175px;
+            height: 45px;
+        }
+
+        &__innerContainer {
+            border-color: rgba(21, 21, 21, 0.7);
+            border-width: 2px;
+            background-color: #2B3822;
+            border-style: solid;
+            // padding-left: 45px;
+            // padding-right: 45px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: -webkit-fill-available;
+        }
+    }
