@@ -194,7 +194,7 @@
             // background-color: plum;
         }
     }
-    @media screen and (max-width: 1330px) {
+    @media screen and (max-width: 1440px) {
         .background-overlay {
             display: none;
         }
