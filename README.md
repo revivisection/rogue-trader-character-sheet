@@ -15,34 +15,18 @@
 - Cool floating servo skulls (only visible in certain screen sizes).
 - Responsive. Not horrible to look at even in small screens.
 
-Word means nothing to you? [See the preview for yourself!](https://bloodpraxis.github.io/rogue-trader-character-sheet/)
+Word means nothing to you? [See the live site for yourself!](https://bloodpraxis.github.io/rogue-trader-character-sheet/)
 
 ## Guides
 
-
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
+View the [Guide](https://github.com/bloodpraxis/rogue-trader-character-sheet/wiki/Tutorial) or [Absolute Beginner Tutorial](https://github.com/bloodpraxis/rogue-trader-character-sheet/wiki/Absolute-Beginner-Tutorial) for more information on how to use this template.
 
 ## Credits
 Dataslate, purity seals, placeholder commissar portrait and character portraits are assets from Warhammer 40,000: Rogue Trader. 
 Warhammer 40,000: Rogue Trader is developed and published by Owlcat Games. 
 Clipboard clip and backing graphic from Rawpixel. Paper texture and background image from Textureslab. 
+
+## Terms of use
+For the code itself, it's [MIT](https://opensource.org/license/mit) baby! Use it tweak it mail it charge it upgrade it, whatever.
+
+Certain image assets, as stated in the "Credits" section above, are owned by either Owlcat Games or Games Workshop. Please use with discretion and preferably for personal and non-commercial purposes. Last thing anyone wants is James Workshop knocking at their door.
