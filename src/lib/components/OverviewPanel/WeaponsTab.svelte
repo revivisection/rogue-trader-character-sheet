@@ -55,6 +55,7 @@
 
         }
     }
+
     .weapons__container {
         padding-top: 10px;
         padding-right: 10px;
@@ -67,8 +68,18 @@
         scrollbar-gutter: stable both-edges;
         font-size: 14px;
     }
+    @media screen and (max-width: 375px) {
+        .weapons__container {
+            height: 175px;
+            padding-right: 0;
+        }
+        :global(.box) {
+            padding-right: 10px;
+        }
+    }
     @media screen and (max-width: 355px) {
         .weapons__container {
+            min-height: 175px;
             width: calc(100vw - 100px);
         }
     }

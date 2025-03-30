@@ -58,10 +58,17 @@
     //         display: none;
     //     }
     // }
+    @media screen and (max-width: 375px) { 
+        .container {
+            height: 175px;
+        }
+    }
+
     @media screen and (max-width: 355px) {
         .container {
             flex-direction: column;
             gap: 0px;
+            height: auto;
             .stats {
                 padding-top: 0px;
             }
