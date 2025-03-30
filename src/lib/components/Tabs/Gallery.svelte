@@ -27,7 +27,7 @@ let modalTitle:any;
     {/if}
   </div>
   <!-- modal content -->
-  <img class="image" src="{modalContent}" alt="Portrait of the rogue trader" draggable="false" >
+  <img class="image" src="{modalContent}" alt="Big preview of a gallery item" draggable="false" >
 </Modal>
 
 <Masonry stretchFirst={firstImageBig} gridGap={'0.75rem'} colWidth={'minmax(Min(20em, 100%), 1fr)'} items={GalleryData.slice(0,itemCount)}>
@@ -43,7 +43,7 @@ let modalTitle:any;
               $: modalTitle = o.name;
               showModal = true
             }}>
-              <img class="pointer image image-{GalleryData.indexOf(o)}" src="{o.image}" alt="Portrait of the rogue trader" draggable="false" >
+              <img class="pointer image image-{GalleryData.indexOf(o)}" src="{o.image}" alt="gallery item" draggable="false" >
             </button>
           </div>
         {/if}
