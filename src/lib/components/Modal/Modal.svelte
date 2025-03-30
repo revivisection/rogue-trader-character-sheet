@@ -2,6 +2,7 @@
 import Button from "../Button/Button.svelte";
 
 	export let showModal:boolean; // boolean
+	export let dialogueClass=""
 
 	let dialog:HTMLDialogElement; // HTMLDialogElement
 
@@ -13,6 +14,7 @@ import Button from "../Button/Button.svelte";
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => dialog.close()}
+	class="{dialogueClass}"
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div on:click|stopPropagation>
@@ -29,7 +31,7 @@ import Button from "../Button/Button.svelte";
 	</div>
 </dialog>
 
-<style>
+<style lang="scss">
 	dialog {
 		max-width: 32em;
 		border-radius: 0.2em;
@@ -42,6 +44,9 @@ import Button from "../Button/Button.svelte";
         border-radius: 5px;
         color: #6E9846;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		&.rt-portrait {
+			max-width: 80vw;
+		}
 	}
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.5);

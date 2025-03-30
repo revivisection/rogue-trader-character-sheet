@@ -217,6 +217,19 @@
     .bonus.darkgreen, .value.darkgreen, .bonus.red, .value.red {
         font-weight: 700;
     }
+
+    .modal-image {
+        width: 100%;
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 3px solid #2B4021;
+        margin: 1em 0;
+        padding: 0;
+    }
+
     @media screen and (max-width: 1024px) {
         .overviewPanel__contentContainer-content {
             padding: 40px 10px;
@@ -271,6 +284,7 @@
                 .seals {
                     top: -4px;
                     left: -37px;
+                    width: 95px;
                 }
             }
         }
@@ -319,6 +333,7 @@
     import puritySeals from "../../assets/images/purity seal.png"
     import littleSeals from "../../assets/images/little seal.png"
     import candleServo from "../../assets/images/servo skull candles.png"
+    import Modal from '../Modal/Modal.svelte';
 
     let items = [
         
@@ -338,8 +353,28 @@
     })
 
     let isAnimating = false;
+    let showModal = false;
 
 </script>
+<Modal bind:showModal dialogueClass="rt-portrait">
+    <div slot="header" class="cairo-bold">
+    {#if characterInfo.name!=null}
+      Rogue Trader {characterInfo.name}<br>
+    {/if}
+    {#if characterInfo.name==null}
+      Untitled - Image Viewer <small>V01.001</small>
+    {/if}
+  </div>
+  <!-- modal content -->
+  <img class="modal-image" src="{characterInfo.image}" alt="Portrait of the rogue trader" draggable="false" >
+  <hr>
+  {#if characterInfo.fullname}
+    <div class="cairo-bold" style="line-height: 150%;">
+        <small class="grey">also known as</small> {characterInfo.fullname}.
+    </div>
+  {/if}
+</Modal>
+
 <div class="clipboard__container">
     <div class="candleServo mobile no-select">
         <img draggable="false" src="{candleServo}" alt="" srcset="">
@@ -375,7 +410,7 @@
                             <div class="level">lvl {characterInfo.level}</div>-
                             <div class="health">{characterInfo.health}</div>
                         </div>
-                        <img class="no-select" draggable="false" src="{characterInfo.image}" alt="">
+                        <img on:click={() => {showModal = true}} class="pointer no-select" draggable="false" src="{characterInfo.image}" alt="">
                     </div>
                 </div>
                 
