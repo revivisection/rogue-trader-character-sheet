@@ -1,4 +1,4 @@
-# A website to showcase your Rogue Trader
+# A web template to showcase your Rogue Trader
 
 ![prevew 1](https://github.com/user-attachments/assets/1629ece6-2f36-4f66-a746-096779f9067d)
 
