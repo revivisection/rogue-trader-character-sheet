@@ -1,4 +1,4 @@
-# A website to showcase your Rogue Trader
+# A web template to showcase your Rogue Trader
 
 ![prevew 1](https://github.com/user-attachments/assets/1629ece6-2f36-4f66-a746-096779f9067d)
 
@@ -29,4 +29,4 @@ Clipboard clip and backing graphic from Rawpixel. Paper texture and background i
 ## Terms of use
 For the code itself, it's [MIT](https://opensource.org/license/mit) baby! Use it tweak it mail it charge it upgrade it, whatever.
 
-Certain image assets, as stated in the "Credits" section above, are owned by either Owlcat Games or Games Workshop. Please use with discretion and preferably for personal and non-commercial purposes. Last thing anyone wants is James Workshop knocking at their door.
+Certain image assets, as stated in the "Credits" section above, were extracted from W40k: Rogue Trader and thus their copyright owner are either Owlcat Games or Games Workshop. Please use with discretion and preferably for personal and non-commercial purposes. Last thing anyone wants is James Workshop knocking at their door.
