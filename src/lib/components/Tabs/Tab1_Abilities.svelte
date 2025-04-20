@@ -2,7 +2,7 @@
     import Accordion from "../Accordion/Accordion.svelte";
     import Button from '../Button/Button.svelte';
     import Classified from "../Decor/Classified.svelte";
-    import { ActiveAbilities } from "../Data/FeaturesData";
+    import { ActiveAbilities, talentsLabels } from "../Data/FeaturesData";
 </script>
 <style lang="scss">
     .abilityContainer {
@@ -36,7 +36,7 @@
     }
 </style>
 <Accordion open={ActiveAbilities.talentTwoOpen}>
-	<span slot="head">Archetype talents: Assassin</span>
+	<span slot="head">Archetype talents: {talentsLabels.archetypeTalentTwoLabel}</span>
 	<div slot="details" class="abilityContainer">
         {#if ActiveAbilities.archetypeTalentTwo.length > 0}
             {#each ActiveAbilities.archetypeTalentTwo as talent}
@@ -53,7 +53,7 @@
 </Accordion>
 
 <Accordion open={ActiveAbilities.talentOneOpen}>
-	<span slot="head">Archetype talents: Operative</span>
+	<span slot="head">Archetype talents: {talentsLabels.archetypeTalentOneLabel}</span>
 	<div slot="details" class="abilityContainer">
         {#if ActiveAbilities.archetypeTalentOne.length > 0}
             {#each ActiveAbilities.archetypeTalentOne as talent}

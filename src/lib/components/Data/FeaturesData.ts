@@ -7,6 +7,11 @@ interface activeAbilities {
     archetypeTalentExemplar: Array<string>
 }
 
+interface TalentsLabels {
+    archetypeTalentOneLabel: string,
+    archetypeTalentTwoLabel: string,
+}
+
 interface Talents {
     originTabOpen: boolean,
     talentOneOpen: boolean,
@@ -25,6 +30,11 @@ export const ActiveAbilities: activeAbilities = {
     archetypeTalentExemplar: [],
     archetypeTalentOne: [],
     archetypeTalentTwo: [`Aim for opening`, `Death Whisper`, `Death Whisper - Second Hand`, `Dispatch`, `Dispatch - Second Weapon`, `Poised to Strike`, `Feinting Attack`]
+}
+
+export const talentsLabels: TalentsLabels = {
+    archetypeTalentOneLabel: "Operative",
+    archetypeTalentTwoLabel: "Assassin"
 }
 
 export const TalentsData: Talents = {
